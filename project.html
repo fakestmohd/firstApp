@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    #frst{
+        width:100%;
+        height:100px;
+        background-image:linear-gradient(to right, red,green);
+    }
+    #artic{
+        width:30%;
+        height:100px;
+        float:right;
+        background-color: white;
+    }
+    #txt{
+        float:left;
+        line-height: 100px;
+        color: black;
+        padding-right:10px;
+        text-decoration:none;
+    }
+    #image1{
+        width:100px;
+        height:100px;
+        border-radius:50%;
+    }
+    
+    #themain{
+        width:100%;
+        height:450px;
+        background-color: violet;
+        animation-name: technicolor;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+    }
+    @keyframes technicolor{
+        0%{
+            background-color: violet;
+        }
+        50%{
+            background-color: blue;
+        }
+        100%{
+            background-color: black;
+        }
+    }
+    #asde{
+        width:30%;
+        height:450px;
+        background-color: tomato;
+        text-align: center;
+    }
+    main img{
+        width:50%;
+        margin-top:10px;
+    }
+    #txt2{
+        padding-top: 10px;
+        border-bottom: dotted yellow 2px;
+    }
+    #artc{
+        width:70%;
+        float:right;
+    }
+    #divartc{
+        float:right;
+        width:40%;
+        margin-right:250px;
+        margin-top:180px;
+        background-color: white;
+        text-align: center;
+        padding:0px 10px;
+    }
+    #h3div{
+        border-bottom:yellow 3px solid;
+    }
+    #prediv{
+        font-size: 20px;
+    }
+    @media only screen and (min-width:1000px) and (max-width:1070px){
+        #asde{
+        width:10%;
+        height:450px;
+        background-color: black;
+        text-align: center;
+        }
+    }
+    #myname{
+        color:transparent;
+        background:red;
+        -webkit-background-clip: text;
+        background-size: 100%;
+    }
+    #nav ul{
+        display: inline-block;
+        list-style-type: none;
+        padding:0px;
+        margin: 0px;
+    }
+    #nav ul li a{
+        text-decoration: none;
+        display: inline-block;
+    }
+    #ul{
+        float:left;
+    }
+    </style>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header id="frst">
+        <article id="artic">
+            <p>
+                <a href="" id="txt"><h3>Mohammed Nassar</h3></a>
+                <a href=""><img src="../phonto.jpg"  id="image1"/></a>
+            </p>
+        </article>
+        <nav id="nav">
+            <ul id="ul">
+                <li><a href=" ">Main Page <div id="div">
+                    <a href="">Mohammed</a>
+                    <a href="">Hisham</a>
+                    <a href="">Nassar</a>
+                </div></a>
+                </li>
+                <li><a href=" ">Suggestions</a></li>
+                <li><a href=" ">Contact US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="themain">
+        <article id="artc">
+        <div id="divartc">
+            <h3 id="h3div">Mohammed Nassar</h3>
+            <p id="prediv">I have passion in coding, cooking and singing.
+                 I'm a computer science student</p>
+        </div>
+        </article>
+        <aside id="asde">
+            <img src="../billieeilish.jpg" />
+            <h2 id="txt2">TESTING TEXT</h2>
+        </aside>
+    </main>
+    <h1 id="myname">
+        I'm Mohammed Nassar
+    </h1>
+    <ul id="bottom">
+        <li><a>bitvhj</a>
+        <li><a>rio;s.</a></li>
+    </ul>
+</body>
+</html>
